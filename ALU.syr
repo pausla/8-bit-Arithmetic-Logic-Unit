@@ -1,0 +1,1091 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Student/Desktop/238992 update2/ALU/MTX.vhd" in Library work.
+Architecture behavioral of Entity mtx is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/238992 update2/ALU/lcd_1.vhd" in Library work.
+Architecture rtl of Entity lcd16x2_ctrl is up to date.
+Compiling vhdl file "C:/Users/Student/Desktop/238992 update2/ALU/ALU.vhd" in Library work.
+Entity <alu> compiled.
+Entity <alu> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MTX> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <lcd16x2_ctrl> in library <work> (architecture <rtl>) with generics.
+	CLK_PERIOD_NS = 20
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <line1<127>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<126>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<125>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<124>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<123>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<122>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<121>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<119>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<118>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<117>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<116>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<115>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<114>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<113>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<111>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<110>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<109>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<108>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<107>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<106>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<105>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<103>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<102>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<101>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<100>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<99>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<98>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<97>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<95>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<94>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<93>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<91>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<90>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<89>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<87>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<86>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<85>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<83>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<82>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<81>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<79>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<78>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<77>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<75>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<74>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<73>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<71>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<70>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<69>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<67>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<66>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<65>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<63>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<62>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<61>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<60>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<59>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<58>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<57>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<56>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<55>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<54>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<53>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<52>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<51>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<50>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<49>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<48>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<47>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<46>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<45>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<44>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<43>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<42>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<41>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<40>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<39>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<38>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<37>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<36>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<35>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<34>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<33>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<32>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<31>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<30>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<29>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<28>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<27>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<26>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<25>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<24>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<23>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<22>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<21>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<20>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<19>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<18>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<17>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<16>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<15>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<14>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<13>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<12>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<11>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<10>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<9>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<8>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<7>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<6>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<5>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<4>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<3>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<2>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<1>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<0>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<127>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<126>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<125>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<123>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<122>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<121>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<119>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<118>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<117>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<115>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<114>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<113>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<111>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<110>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<109>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<107>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<106>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<105>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<103>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<102>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<101>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<99>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<98>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<97>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<95>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<94>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<93>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<92>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<91>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<90>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<89>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<88>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<87>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<86>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<85>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<84>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<83>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<82>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<81>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<80>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<79>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<78>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<77>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<76>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<75>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<74>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<73>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<72>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<71>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<70>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<69>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<68>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<67>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<66>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<65>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<64>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<63>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<62>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<61>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<60>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<59>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<58>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<57>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<56>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<55>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<54>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<53>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<52>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<51>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<50>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<49>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<48>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<47>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<46>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<45>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<44>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<43>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<42>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<41>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<40>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<39>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<38>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<37>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<36>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<35>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<34>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<33>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<32>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<31>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<30>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<29>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<28>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<27>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<26>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<25>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<24>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<23>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<22>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<21>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<20>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<19>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<18>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<17>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<16>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<15>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<14>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<13>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<12>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<11>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<10>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<9>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<8>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<7>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<6>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<5>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<4>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<3>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<2>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<1>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<0>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <MTX> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Student/Desktop/238992 update2/ALU/MTX.vhd" line 88: Mux is complete : default of case is discarded
+Entity <MTX> analyzed. Unit <MTX> generated.
+
+Analyzing generic Entity <lcd16x2_ctrl> in library <work> (Architecture <rtl>).
+	CLK_PERIOD_NS = 20
+Entity <lcd16x2_ctrl> analyzed. Unit <lcd16x2_ctrl> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <line2_buffer<10>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<11>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<12>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<13>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<14>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<20>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<15>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<21>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<16>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<22>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<17>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<23>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<18>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<24>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<19>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<30>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<25>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<31>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<26>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<32>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<27>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<33>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<28>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<34>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<29>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<40>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<35>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<41>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<36>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<42>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<37>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<38>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<43>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<44>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<39>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<50>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<45>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<51>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<46>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<52>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<47>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<53>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<48>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<54>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<49>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<60>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<55>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<61>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<56>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<62>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<57>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<63>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<58>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<64>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<59>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<70>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<65>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<71>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<66>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<72>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<67>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<73>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<68>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<74>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<69>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<80>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<75>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<81>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<76>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<82>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<77>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<83>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<78>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<84>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<79>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<90>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<85>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<91>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<86>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<92>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<87>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<93>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<88>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<94>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<89>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<95>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<97>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<98>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<99>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<10>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<11>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<12>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<13>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<14>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<15>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<20>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<16>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<21>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<17>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<22>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<18>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<23>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<19>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<24>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<25>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<30>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<26>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<31>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<27>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<32>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<28>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<33>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<29>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<34>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<35>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<40>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<36>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<41>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<37>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<42>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<38>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<43>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<100>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<39>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<44>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<101>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<45>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<50>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<102>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<46>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<51>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<103>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<47>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<52>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<48>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<53>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<110>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<105>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<49>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<54>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<111>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<106>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<55>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<60>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<107>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<56>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<61>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<113>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<108>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<57>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<62>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<114>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<109>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<0>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<58>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<101>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<63>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<115>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<1>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<59>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<102>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<121>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<116>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<2>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<65>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<103>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<70>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<122>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<117>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<3>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<66>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<71>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<123>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<118>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<4>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<67>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<105>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<110>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<124>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<119>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<5>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<73>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<106>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<111>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<125>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<6>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<74>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<107>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<69>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<126>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<7>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<113>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<75>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<127>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<8>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<81>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<109>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<114>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<9>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<82>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<115>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<77>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<83>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<121>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<78>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<117>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<122>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<79>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<90>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<118>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<123>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<85>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<91>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<119>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<86>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<125>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<87>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<93>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<126>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<94>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<127>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<89>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<95>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<0>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<97>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<1>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<98>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<2>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1_buffer<99>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<3>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<4>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<5>> in unit <ALU> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<6>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<7>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<8>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2_buffer<9>> in unit <ALU> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <MTX>.
+    Related source file is "C:/Users/Student/Desktop/238992 update2/ALU/MTX.vhd".
+    Found 4-bit register for signal <liczba>.
+    Found 4-bit register for signal <row_line>.
+    Found 7-bit register for signal <led>.
+    Found 7-bit 8-to-1 multiplexer for signal <led$mux0000> created at line 30.
+    Found 4-bit 8-to-1 multiplexer for signal <liczba$mux0000> created at line 30.
+    Found 4-bit 4-to-1 multiplexer for signal <liczba$mux0001> created at line 34.
+    Found 4-bit 4-to-1 multiplexer for signal <liczba$mux0002> created at line 49.
+    Found 4-bit 4-to-1 multiplexer for signal <liczba$mux0003> created at line 64.
+    Found 4-bit 4-to-1 multiplexer for signal <liczba$mux0004> created at line 79.
+    Found 4-bit 8-to-1 multiplexer for signal <row_line$mux0000> created at line 30.
+    Found 11-bit up counter for signal <temp>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  15 D-type flip-flop(s).
+	inferred  31 Multiplexer(s).
+Unit <MTX> synthesized.
+
+
+Synthesizing Unit <lcd16x2_ctrl>.
+    Related source file is "C:/Users/Student/Desktop/238992 update2/ALU/lcd_1.vhd".
+    Found finite state machine <FSM_0> for signal <op_state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 18                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | op_state$cmp_eq0000       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | done                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | reset                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 20-bit register for signal <cnt>.
+    Found 20-bit subtractor for signal <next_cnt$share0000> created at line 175.
+    Found 4-bit register for signal <ptr>.
+    Found 4-bit subtractor for signal <ptr$addsub0000>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <lcd16x2_ctrl> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/Student/Desktop/238992 update2/ALU/ALU.vhd".
+    Register <line1<76>> equivalent to <line1<68>> has been removed
+    Register <line1<84>> equivalent to <line1<68>> has been removed
+    Register <line1<92>> equivalent to <line1<68>> has been removed
+    Register <line1_buffer<76>> equivalent to <line1_buffer<68>> has been removed
+    Register <line1_buffer<92>> equivalent to <line1_buffer<84>> has been removed
+    Register <line2<108>> equivalent to <line2<100>> has been removed
+    Register <line2<116>> equivalent to <line2<100>> has been removed
+    Register <line2<124>> equivalent to <line2<100>> has been removed
+    Register <line2_buffer<108>> equivalent to <line2_buffer<100>> has been removed
+    Register <line2_buffer<124>> equivalent to <line2_buffer<116>> has been removed
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | nreset                    (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <borrow>.
+    Found 4-bit register for signal <liczba1>.
+    Found 4-bit register for signal <liczba2>.
+    Found 1-bit register for signal <line1<120>>.
+    Found 1-bit register for signal <line1<112>>.
+    Found 1-bit register for signal <line1<104>>.
+    Found 1-bit register for signal <line1<96>>.
+    Found 1-bit register for signal <line1<88>>.
+    Found 1-bit register for signal <line1<80>>.
+    Found 1-bit register for signal <line1<72>>.
+    Found 1-bit register for signal <line1<68>>.
+    Found 1-bit register for signal <line1<64>>.
+    Found 1-bit register for signal <line1_buffer<120>>.
+    Found 1-bit register for signal <line1_buffer<112>>.
+    Found 1-bit register for signal <line1_buffer<104>>.
+    Found 1-bit register for signal <line1_buffer<96>>.
+    Found 1-bit register for signal <line1_buffer<88>>.
+    Found 1-bit register for signal <line1_buffer<84>>.
+    Found 1-bit register for signal <line1_buffer<80>>.
+    Found 1-bit register for signal <line1_buffer<72>>.
+    Found 1-bit register for signal <line1_buffer<68>>.
+    Found 1-bit register for signal <line1_buffer<64>>.
+    Found 1-bit register for signal <line2<120>>.
+    Found 1-bit register for signal <line2<112>>.
+    Found 1-bit register for signal <line2<104>>.
+    Found 1-bit register for signal <line2<100>>.
+    Found 1-bit register for signal <line2<96>>.
+    Found 1-bit register for signal <line2_buffer<120>>.
+    Found 1-bit register for signal <line2_buffer<116>>.
+    Found 1-bit register for signal <line2_buffer<112>>.
+    Found 1-bit register for signal <line2_buffer<104>>.
+    Found 1-bit register for signal <line2_buffer<100>>.
+    Found 1-bit register for signal <line2_buffer<96>>.
+    Found 7-bit register for signal <op>.
+    Found 5-bit adder for signal <result_temp$add0000> created at line 322.
+    Found 4-bit comparator equal for signal <result_temp$cmp_eq0005> created at line 301.
+    Found 4-bit comparator greatequal for signal <result_temp$cmp_ge0000> created at line 325.
+    Found 4-bit comparator greater for signal <result_temp$cmp_gt0000> created at line 308.
+    Found 4-bit comparator less for signal <result_temp$cmp_lt0000> created at line 315.
+    Found 4-bit subtractor for signal <result_temp$sub0000> created at line 326.
+    Found 5-bit subtractor for signal <result_temp$sub0001> created at line 328.
+    Found 4-bit xor2 for signal <result_temp$xor0000> created at line 295.
+    Found 8-bit register for signal <result_temp_reg>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  54 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <ALU> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 20-bit subtractor                                     : 1
+ 4-bit subtractor                                      : 2
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 40
+ 1-bit register                                        : 31
+ 20-bit register                                       : 1
+ 4-bit register                                        : 5
+ 7-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 4
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+# Multiplexers                                         : 7
+ 4-bit 4-to-1 multiplexer                              : 4
+ 4-bit 8-to-1 multiplexer                              : 2
+ 7-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:3]> with user encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ idle         | 000
+ read_number1 | 001
+ read_number2 | 010
+ operation    | 011
+ result       | 100
+--------------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <L1/state/FSM> on signal <state[1:3]> with gray encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ reset        | 000
+ config       | 001
+ select_line1 | 011
+ write_line1  | 010
+ select_line2 | 110
+ write_line2  | 111
+--------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <L1/op_state/FSM> on signal <op_state[1:10]> with one-hot encoding.
+----------------------------
+ State        | Encoding
+----------------------------
+ idle         | 0000000010
+ wait_setup_h | 0000000100
+ enable_h     | 0000001000
+ wait_hold_h  | 0000010000
+ wait_delay_h | 0000100000
+ wait_setup_l | 0001000000
+ enable_l     | 0010000000
+ wait_hold_l  | 0100000000
+ wait_delay_l | 1000000000
+ done         | 0000000001
+----------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# Adders/Subtractors                                   : 5
+ 20-bit subtractor                                     : 1
+ 4-bit subtractor                                      : 2
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 93
+ Flip-Flops                                            : 93
+# Comparators                                          : 4
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greatequal                           : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+# Multiplexers                                         : 7
+ 4-bit 4-to-1 multiplexer                              : 4
+ 4-bit 8-to-1 multiplexer                              : 2
+ 7-bit 8-to-1 multiplexer                              : 1
+# Xors                                                 : 1
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <result_temp_reg_5> in Unit <ALU> is equivalent to the following 2 FFs/Latches, which will be removed : <result_temp_reg_6> <result_temp_reg_7> 
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <MTX> ...
+
+Optimizing unit <lcd16x2_ctrl> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALU, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 118
+ Flip-Flops                                            : 118
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU.ngr
+Top Level Output File Name         : ALU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 26
+
+Cell Usage :
+# BELS                             : 432
+#      GND                         : 1
+#      INV                         : 21
+#      LUT1                        : 11
+#      LUT2                        : 19
+#      LUT2_L                      : 4
+#      LUT3                        : 86
+#      LUT3_D                      : 3
+#      LUT3_L                      : 2
+#      LUT4                        : 136
+#      LUT4_D                      : 20
+#      LUT4_L                      : 21
+#      MUXCY                       : 34
+#      MUXF5                       : 31
+#      MUXF6                       : 11
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 118
+#      FD                          : 3
+#      FDC                         : 14
+#      FDCE                        : 7
+#      FDE                         : 80
+#      FDR                         : 1
+#      FDRE                        : 7
+#      FDRSE                       : 1
+#      FDS                         : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 25
+#      IBUF                        : 9
+#      OBUF                        : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      178  out of   4656     3%  
+ Number of Slice Flip Flops:            118  out of   9312     1%  
+ Number of 4 input LUTs:                323  out of   9312     3%  
+ Number of IOs:                          26
+ Number of bonded IOBs:                  26  out of    232    11%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 118   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+M1/rst1_inv(nreset_inv1_INV_0:O)   | NONE(M1/led_0)         | 21    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.866ns (Maximum Frequency: 145.645MHz)
+   Minimum input arrival time before clock: 7.263ns
+   Maximum output required time after clock: 11.331ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.866ns (frequency: 145.645MHz)
+  Total number of paths / destination ports: 2498 / 182
+-------------------------------------------------------------------------
+Delay:               6.866ns (Levels of Logic = 8)
+  Source:            L1/cnt_7 (FF)
+  Destination:       L1/cnt_19 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: L1/cnt_7 to L1/cnt_19
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.622  L1/cnt_7 (L1/cnt_7)
+     LUT4:I0->O            1   0.704   0.000  L1/op_state_cmp_eq0001_wg_lut<0> (L1/op_state_cmp_eq0001_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  L1/op_state_cmp_eq0001_wg_cy<0> (L1/op_state_cmp_eq0001_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  L1/op_state_cmp_eq0001_wg_cy<1> (L1/op_state_cmp_eq0001_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  L1/op_state_cmp_eq0001_wg_cy<2> (L1/op_state_cmp_eq0001_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  L1/op_state_cmp_eq0001_wg_cy<3> (L1/op_state_cmp_eq0001_wg_cy<3>)
+     MUXCY:CI->O          22   0.331   1.199  L1/op_state_cmp_eq0001_wg_cy<4> (L1/op_state_cmp_eq0001)
+     LUT4_D:I2->O         13   0.704   1.062  L1/next_cnt<4>11 (L1/N23)
+     LUT2:I1->O            1   0.704   0.000  L1/next_cnt<15>1 (L1/next_cnt<15>)
+     FDE:D                     0.308          L1/cnt_15
+    ----------------------------------------
+    Total                      6.866ns (3.983ns logic, 2.883ns route)
+                                       (58.0% logic, 42.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 288 / 74
+-------------------------------------------------------------------------
+Offset:              7.263ns (Levels of Logic = 7)
+  Source:            col_line<1> (PAD)
+  Destination:       M1/led_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: col_line<1> to M1/led_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.218   1.108  col_line_1_IBUF (col_line_1_IBUF)
+     LUT2:I0->O            9   0.704   0.899  M1/led_mux0001<4>21 (M1/liczba_and0000)
+     LUT3:I1->O            1   0.704   0.000  M1/led_mux0001<3>_G (N181)
+     MUXF5:I1->O           1   0.321   0.455  M1/led_mux0001<3> (M1/led_mux0001<3>)
+     LUT3:I2->O            1   0.704   0.000  M1/Mmux_led_mux0000_43 (M1/Mmux_led_mux0000_43)
+     MUXF5:I1->O           1   0.321   0.000  M1/Mmux_led_mux0000_3_f5_2 (M1/Mmux_led_mux0000_3_f53)
+     MUXF6:I1->O           1   0.521   0.000  M1/Mmux_led_mux0000_2_f6_2 (M1/led_mux0000<3>)
+     FDC:D                     0.308          M1/led_3
+    ----------------------------------------
+    Total                      7.263ns (4.801ns logic, 2.462ns route)
+                                       (66.1% logic, 33.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 143 / 15
+-------------------------------------------------------------------------
+Offset:              11.331ns (Levels of Logic = 7)
+  Source:            L1/ptr_2 (FF)
+  Destination:       lcd_db<4> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: L1/ptr_2 to lcd_db<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q             27   0.591   1.436  L1/ptr_2 (L1/ptr_2)
+     LUT3:I0->O            1   0.704   0.000  L1/lcd_db<4>101_F (N176)
+     MUXF5:I0->O           1   0.321   0.424  L1/lcd_db<4>101 (L1/lcd_db<4>101)
+     LUT4:I3->O            1   0.704   0.424  L1/lcd_db<4>129 (L1/lcd_db<4>129)
+     LUT4:I3->O            1   0.704   0.424  L1/lcd_db<4>172_SW1 (N172)
+     LUT4:I3->O            1   0.704   0.499  L1/lcd_db<4>172 (L1/lcd_db<4>172)
+     LUT4:I1->O            1   0.704   0.420  L1/lcd_db<4>353 (lcd_db_4_OBUF)
+     OBUF:I->O                 3.272          lcd_db_4_OBUF (lcd_db<4>)
+    ----------------------------------------
+    Total                     11.331ns (7.704ns logic, 3.627ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.51 secs
+ 
+--> 
+
+Total memory usage is 270632 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :  475 (   0 filtered)
+

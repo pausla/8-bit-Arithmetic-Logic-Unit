@@ -1,0 +1,25 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/slawi/Desktop/238992 update2/ALU/ALU_test_isim_beh.exe" -prj "C:/Users/slawi/Desktop/238992 update2/ALU/ALU_test_beh.prj" "work.ALU_test" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/slawi/Desktop/238992 update2/ALU/MTX.vhd" into library work
+Parsing VHDL file "C:/Users/slawi/Desktop/238992 update2/ALU/lcd_1.vhd" into library work
+Parsing VHDL file "C:/Users/slawi/Desktop/238992 update2/ALU/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/slawi/Desktop/238992 update2/ALU/ALU_test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity MTX [mtx_default]
+Compiling architecture rtl of entity lcd16x2_ctrl [\lcd16x2_ctrl(20)\]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavior of entity alu_test
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 VHDL Units
+Built simulation executable C:/Users/slawi/Desktop/238992 update2/ALU/ALU_test_isim_beh.exe
+Fuse Memory Usage: 34412 KB
+Fuse CPU Usage: 1234 ms

@@ -1,0 +1,6 @@
+EN lcd16x2_ctrl NULL "C:/Users/Student/Desktop/238992 update2/ALU/lcd_1.vhd" sub00/vhpl02 1559298059
+AR mtx behavioral "C:/Users/Student/Desktop/238992 update2/ALU/MTX.vhd" sub00/vhpl01 1559298058
+EN mtx NULL "C:/Users/Student/Desktop/238992 update2/ALU/MTX.vhd" sub00/vhpl00 1559298057
+AR alu behavioral "C:/Users/Student/Desktop/238992 update2/ALU/ALU.vhd" sub00/vhpl05 1559298062
+AR lcd16x2_ctrl rtl "C:/Users/Student/Desktop/238992 update2/ALU/lcd_1.vhd" sub00/vhpl03 1559298060
+EN alu NULL "C:/Users/Student/Desktop/238992 update2/ALU/ALU.vhd" sub00/vhpl04 1559298061

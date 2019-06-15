@@ -1,0 +1,4 @@
+vhdl work "MTX.vhd"
+vhdl work "lcd_1.vhd"
+vhdl work "ALU.vhd"
+vhdl work "ALU_test.vhd"

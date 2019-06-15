@@ -1,0 +1,45 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "change_state[0]" LOC = N17;
+NET "change_state[1]" LOC = H18;
+NET "change_state[2]" LOC = L14;
+NET "change_state[3]" LOC = L13;
+
+NET "clk" LOC = C9;
+NET "nreset" LOC = D18;
+NET "lcd_db[7]" LOC = M15;
+NET "lcd_db[6]" LOC = P17;
+NET "lcd_db[5]" LOC = R16;
+NET "lcd_db[4]" LOC = R15;
+NET "lcd_e" LOC = M18;
+NET "lcd_rs" LOC = L18;
+NET "lcd_rw" LOC = L17;
+NET "borrow" LOC = F12;
+
+NET "liczba[3]" LOC = F9;
+NET "liczba[2]" LOC = E9;
+NET "liczba[1]" LOC = D11;
+NET "liczba[0]" LOC = C11;
+
+NET "col_line[0]" LOC = A6;
+NET "col_line[1]" LOC = B6;
+NET "col_line[2]" LOC = E7;
+NET "col_line[3]" LOC = F7;
+NET "row_line[0]" LOC = B4;
+NET "row_line[1]" LOC = A4;
+NET "row_line[2]" LOC = D5;
+NET "row_line[3]" LOC = C5;
+
+NET "col_line[3]" PULLDOWN;
+NET "col_line[2]" PULLDOWN;
+NET "col_line[1]" PULLDOWN;
+NET "col_line[0]" PULLDOWN;
+
+
+NET "row_line[3]" DRIVE = 2;
+NET "row_line[2]" DRIVE = 2;
+NET "row_line[1]" DRIVE = 2;
+NET "row_line[0]" DRIVE = 2;
+
+NET "nreset" PULLUP;
